@@ -1,4 +1,4 @@
-#Pseudocodes
+# Pseudocodes
 Here follows all of the pseudocodes for every algorithms used in our project.
 
 ## Function closestPointToPlayer
