@@ -10,6 +10,7 @@ Here follows all of the pseudocodes for every algorithms used in our project.
 The closest point to player (playerPoint at x=0, y=0)
 
 ### Pseudocode
+```
 pointsOnLine <- findPointsOnLine from set and line equation
 
 if N == 0 then
@@ -17,6 +18,7 @@ if N == 0 then
 else
     pointsOnLineSorted <- quicksort by absolute x
     return first element of pointsOnLineSorted
+```
 
 ## Function findPointsOnLine
 ### Input
@@ -27,12 +29,14 @@ else
 A set of points that are on the provided line equation
 
 ### Pseudocode
+```
 pointsOnLine <- empty array of 2D points
 
 for every point in the set do
     if y coordinate of point = a from the line equation * x coordinate of point then
     Append point to pointsOnLine
 return pointsOnLine
+```
 
 ## Function quicksort
 ### Input
@@ -43,11 +47,13 @@ return pointsOnLine
 Array A sorted by absolute x of their points in non-decreasing order
 
 ### Pseudocode
+```
 if l < r then
     s <- lomutoPartitioning of A with its left part and right part
     quicksort(A, l, s-1)
     quicksort(A, s+1, r)
 return A
+```
 
 ## Function lomutoPartitioning
 ### Input
@@ -58,6 +64,7 @@ return A
 Index of pivot. A will also be modified during this function and be partially sorted
 
 ### Pseudocode
+```
 p <- A[l]
 s <- l
 for i=l+1 to r+1 do
@@ -66,6 +73,7 @@ for i=l+1 to r+1 do
         swap(A, s, j)
 swap(A, l, s)
 return s
+```
 
 ## Function swap
 ### Input
@@ -76,8 +84,9 @@ return s
 A will be modified such as the two elements provided in input will have their indexes swapped
 
 ### Pseudocode
+```
 tmp <- A[index1]
 A[index1] <- A[index2]
 A[index2] <- A[index1]
-
+```
 
